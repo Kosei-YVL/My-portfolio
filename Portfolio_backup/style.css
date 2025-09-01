@@ -1,0 +1,121 @@
+main{
+    padding: 24px
+}
+header{
+    background-color: aliceblue;
+    width: 100%;
+}
+header h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family:sans-serif;
+}
+header h1:hover{
+    color: rgb(7, 99, 237);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li a{
+    margin: 0 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a:hover{
+    color: rgb(7, 99, 237);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+#about{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+#works{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+#works ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+#works img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#contact{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.form{
+    max-width: 640px;
+    width: 75%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.form h2{
+    text-align: center;
+}
+.form-group{
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+.form-label{
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.form-control{
+width: 75%;
+padding: 12px 14px;
+box-sizing: border-box;
+align-items: center;
+}
+textarea.form-control{
+    min-height: 140px;
+    resize: vertical;
+}
+.form-action{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    background-color: rgb(247, 247, 248);
+    color: hwb(0 0% 100%);
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn:hover{
+    background-color: rgb(7, 99, 237);
+    color: white;
+    transition-duration: 0.5s;
+}

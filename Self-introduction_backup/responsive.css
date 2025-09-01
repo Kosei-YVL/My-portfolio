@@ -1,0 +1,11 @@
+@media(min-width: 768px){
+    main{
+        display: flex;
+    }
+    .profile-skills{
+        margin-left: 40px;
+    }
+    .profile-contact{
+        margin-left: 40px;
+    }
+}
