@@ -14,3 +14,20 @@
         object-fit: cover;
     }
 }
+@media(max-width: 767px){
+  
+    
+    .header-list-right ul{
+        display: none;
+    }
+    .main-visual {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main-visual a img {
+        width: 75%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
