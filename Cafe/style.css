@@ -1,14 +1,14 @@
 body{
     padding: 20px;
 }
-.header{
+header{
     height: 70px;
     background-color: #fff;
     border-bottom: #1e1c1c 1px solid;
     display : flex;
     width: 100%;
 }
-.header-title h1{
+h1{
     font-size: 40px;
     font-weight: bold;
     color: #333;
