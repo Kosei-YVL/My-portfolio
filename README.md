@@ -4,3 +4,8 @@ Web制作基礎学習の一環として、HTMLとCSSのみで構成されたシ�
 今後はJavaScriptによる動的な機能追加も予定しています。
 ##デモサイト
 https://github.com/Kosei-YVL/My-portfolio.git
+##使用技術
+HTML、CSS、Git
+##機能・特徴
+スマホ～PCに対応したレスポンシブデザイン
+クリーンでシンプルなUI設計
