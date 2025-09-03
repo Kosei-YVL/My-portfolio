@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="responsive.css">
 </head>
     <body>
+     <div class="wrapper">
         <header>
             <h1>プロフィール</h1>
             <nav>
@@ -16,42 +17,41 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+            </nav>    
         </header>
-        <main>
-            <div class="profile-introduction" id="introduction">
+        <main class="container">
+            <section class="profile-introduction" id="introduction">
                 <h2>自己紹介</h2>
-                <p>山形出身。千葉大学工学部2年。8月にWeb制作を始めました。趣味はサッカーと音楽鑑賞です。
-                </p>
-            
-                <div class="profile-image">
-                    <div class="image1">
-                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEhIVEhUVFRYWFRUYFxUVFRUVFRUWFhUVFRUYHSggGBolGxYVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OFxAQGi0lHR0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rLS0tLf/AABEIALgBEwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwABBAUGB//EADsQAAEDAgQDBQYFAwQDAQAAAAEAAhEDIRIxQVEEYXEFE4GRoQYiMrHB8BRC0eHxBxVSYnKSokOCgyP/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAjEQEAAgEEAgMBAQEAAAAAAAAAARECAxIhURNBBDFhInEy/9oADAMBAAIRAxEAPwDeXqw9JxI5XxXIYcmNckKNciW0Pcga5Kc5UChbUCpKW16hKKcFUpMqi5Cz0QKz4lMaFtBUa5IFRQuQtpLlQWcPU7xUtqJVYln7xFjQNLkQKz41O9RbaJQkpQqKGogdKqUgVERqIHFygesxqKxURLPLkIckmojBRbPDlC5ZnPVB6FtBcqL0guUxoG40YqLMXKYlRpxqLN3iiWtliEYAWUFE1yW5tBARsaFlL1QqFTgtu7sKxSCxNqFN7xXhWh1IBQNCzd6VO9KcFtBaqdTSRUKvvE4LObRUPDpffKxxCcFrdRKDAVbq5Qd8VJiCx4CqLVBWVmolFia1QsKDvFffJRaiwqu7KLvVffpUARTKhplE2uidVsrtgJaFZah7xMbVUosHdlQNTO+UFVKLAWK7ozXCgrBXaWVhVporBV3wSlKgqiFpFZqB1QJQQUKcXhQuCUEK0ZcFFaGclWgbdWVmmBgKEIZUlAbUaQoHFCzZUlAHKEopgcrJSQ5WgZKEqgixBQWESViVgqoOULnISVRCKIORSlAQoXohwUcliopiRbGCq7xJKAoW0l6EvSWlQlEs4OUL1nxFEEDw5TGkFWGoHFyFxS8JUQEHKi5RrFeFBWJCXo8Kt1NVSg8qI8HJRE5LZURGolwqwqBuJAXkKoRBiAm1UQdKWAdkQaUELiiATBRccgrFF/8AiVeSiXUiVbaZWhvDv2Ko0nbJU9DOQoAtNPhHHRaR2S7OYVjDKfQwAKoK6VPsonNyI9mW+Ja8OZw5N1YldM9ngfmVM4Jpzcp48hzpVroO4WmDmnUadLktRpfo5D2K2hdstojZIqVKeyTpV7HLIQupnZbq1ZkWCFvFiMlnbj7kZWUicgnt4F/+KYzjcOice1j/AIrURh7kJdwLo+FCzs96Y/tNx0Qfj3FP4Df7UQJkKU+A3KA8U4jNQPMXKXhHpaPHBN3VngGbrE6tzQd6rvx6Sm11Bg1UmnyWMulAGqb49QU3A0xsnGtSGy5NSEslXy16WnUdxjNlFycSinlkdZ1OjulmhS0K5ZeJRMkqTqX6hHTpmk3SURrUxkFz3NMJQU8k9K67OMpj8qv+4MGTVx8SM5JGrkU6H9x2Cv8AuB2C59O6Y+Bkp5Mu1psdx7oyCzjiXJTHhQ1EnPKfZR7OKei/G1N1mFWBKb34Oim/LsoJ4h/+SDv37onPCpzgm6e0pRrOOpV+8ixCELqh0WbWgmZVmUQNkOJARdCDHZWqIQA26YaaFh8FDUSxCUWJUHhTEISwQ6KeCJr1RellBLlTiclYeiBBKoSGEXKoAlaQFRQosNKHEVHkomzCIGJSnsvZOAULUWie7UTyxRUpikKmuKAU9ZR4YuEYMDzCsGLpZkJjH2lQGKgVOqoe9GyuxKKIVgre9Kc1qpsFCzgQmtcFmiCjFQJSxJr3DZTSwSQbKd5zUpbNp81eqzF5lMD90os3vI5q++kWCRSvqifUhQtoY+2yrXNZiTGaGDqVqi2wPSqlYbpAdzuqEbSolj70K2PnRFhb0Ua+MkoMF9FQhKe505ocUjOVKW2iOaouhKDxHRKFSeSFtLaoCt1cLP3kDLNQmAhbQK+yYawWDvOSY4yqW0ggqNcBKzDKZVAEiUD3VNdED3apLh4qNcR0RWgEqJIqqIcF4/klhxQOeZibIST+y1w5tDqboCqXZRZSm8iACieDPXNCig8Z+aL8WNkDjAymUDW8kDW8SCmNekd3e2SGoyN04GqpWOSBtU7IGMJCWGlBqNxdLYAEsNdI2RmmTqgZYgqmzCqmwDO6LDEm2ayqm/NGBBjRLDgbGyNrxYGytinnySi5wK2cJQxm1gMztOXUnYL2Ps37Jy4OrU4ZE+/GN50GD8g63XTT0pz/AMWMZl4jh+He/wCBjnn/AEtLvkE+p2bxDbmjVA503j1hfa6NMNENAa0WAFgPBMXoj4sTH2343wcYkxknNfTfaDsVtb32BjTJxYhLXcxFwZ/MPVeK7R7BqUzkWzkJxNcf9Dxn/tMHquefxsoj+eWJinEqHnmhaUTpOcQgMzELzodT11VNqAC4Eq2SLK+75Io8YNoQcQ61hKMs9EDCUFCqBpogqVtckXuzcgoi6Yy6KBZrEtVN4lwyGSZhHIShcBJQR1U5xooHk5jNCCRoEsvM+CtFiJUSiTsorSWAtdNxlFlo945gR8ilhpm5sInnOcLRLjYZWUsoEEjIAj1RtpvOeW+SLuj+Ygo3UrCXfeyWtEGgYzgabqu7IAja/VFVYd94QVNp211RFtoEC7hvHVW6ieUnXZBgHkPDxUZAOZJtqpYFwj83kiLra8kBqZnM5IKj3RlP3mrCG4t5jJW5sJVEu20v0Tn1HAWjnylSxfdjnkqwjIE5JeJ8cjleEQqxJAvMIGtZb5rVwHZr69RtNmbnAA6AZknkBJWAVTMR101Xvf6dcO1javEPhoEUwSYGhdn1YFvTx35U1jFy9H2H7PUuGyGNwycRlvHM7/Rb24nVRIs0HzMft5FbQszqbg12H43AxOQN8Mna6+ljhEO/0+We2vtdW/EvZRrPp02EsAY4txObZziRznyXl3e1fF6cTWH/ANHfqt3tF2FVovw1GkE3B0duQcj+681WpmQALkwNyTkANSu0RDEvufsn2ueJ4Jj2kNfBa+0xUZAJAnI2dH+pa6lFzwQ4U7iHDCYd1vr6Lyf9OuzuK4anU/EMwtqOa5rJ99liHOcMgCMNpn3V6XjO0w2ARY631vM7LE/bE8vL+1XY4a3v6bco7xoyg27zrMT1ndeVa+eXNe6PtLQNYcOfeFSWvGga4R722a8F2vwzqVR9Mf8AjeWk7gGAfqvF8rS2zGXbFja7moHmLFZKTnEWtdaC18CQORzXlURqOi+XJW6pB2UaNQUWHczqpas7p2vy1TGMJ0sE0k5CDzRvAjb7uraUzt4dx3hU9o10T3OMROR80L6ZgyllFmLAXA05qy1vr6ocMwYhX3ZAJDZvP6lFU4HRRV3g1BnoqSg1nD4vzRt0gqza2Zi/TUoGtGknONpzRsaCc8x0z0WVA6LiZMeAH7JrTYZdeiosA552yRG4yFp/n72SUiC6t9oEwkMpg5tGbjOwWkg2j4Z8Y3RMpNjLO05EjVIWmPu87SLaplKheYOtp05ei0inFxa3oPqiDRprrmRA20QosMmPdyv+itzBt181bW6Yo+IxlZNwCL6JZTMynaQ3eyJtLL3QJWgObcb+FjzSy+YE8h/Pgm4oipwwOvRLqcObGBznbRay0Trn9SFXdggZxIHNLlKZ6bDlaNLXW7tPtkM4WlwuQf3lWoejoYD/AMT5BZi06H99AsXtfw8UKFZuTXVaDzzM1Kc/8n+S7fH/AO2sX0L+nHa9Soe5NXGxrCQDdzcJaIDs8N8vKF75fDP6KccPxxYTc8O8gcxUYT6L7c+pZe7yRjxLqDj+Dp1mGnVY2o05g5ciNjzC8z2P2DwnBvL2sJqOJwvecbmtvDWE/DYXi+5K73EcRZeR7a4BnEPpPc5wdw7zERBJwvvIkaZQc1znWtJp1O2vaLh+HLDUqNaKk4Tc2AkuMZN5m11w+3arKtM904NJaXgtdYgNkFsZTOnJcH2p7Le+rTNJ7Q80u5qFwxNFMycTWk2dn5pncBlJwAc4inhBAkuLWBowjO8ZdV0xzinLLjl8w4DtdzKmMOMzIOfiZzXuanHd5gquzqMa7zbr5L5XTY8vDIIeXBuEgg4iYgg5L6X3WANYIhjWtnWzYJ+91n5mV4QkxR7DfWOV90xpsBiiekRssjSGzPibmIRAA5ZEQvmJEtDbRcm+cabBA94aYPlySzVg65fXZXVvsbA33PTorAYysM459FWK8GxGm/VIBdeInaIMZwVQrm5tvcHnHiqHCqJIMg6W55qXJzABVBzjtvlnFwipECTMk+otf72VDWhxMfwI5oMLvhkgGYJy/hA4uuLxI8osic62UzP1FvBFUOGduCogEbH/ALfRRBtNIZCL5wbj+FVYQAB10057JWICYbpmDNwJ/ZVSiwIJ2uYtp97LUzHTFT2OqJHSf2VF0b/vrPmEIkX5R4gG2e3zV95aCNzMXJP8JwlZdnYoM3tPj184QsrAi+t48hPl80l1VxMO0Gu0WmVTddDBERsY8oHopwf00AYgZvllf7siYSAZuP0Gf3uVmYTllYx10GWShc6JgzJ9PmDfySMYXdk0VmgwbCPlkLoKmHM3tPW4+/NA/FIFwJuReIzxeXqqBk4jkDYjS5t6BXbHab8umosE2AmR5Hb1CF2ExiEWEnw/dIAGIH+NvC8eaJ1UGYluo0sbqbY7Xfl0pxEyP8ojS1o80upB3acs9TeU4PaHA4ZaLW9D6hLfhn4TkSZJNxbPyVr9N09KhosXkG/yzlbuy6VOtTq8LVPu1oygFr2wWuadHZHLS+a51SgCZyg2jMjPzz8uaYKTbFpdaCSNHA572MJH3cSsZTE/T3XZfZfBdnU5pMawmxqO9+o+BiOI5neBAGi9BW46KeIQbTEgT0cbR1heEr9qCtT7t0d633qZ0e4Ay0HctJEc9RKDhO3H901rIfgGFzSb4Bdjr6loLDOTgt3MxcvVExLzvtX/AFSfenQEG4Ljpf5/dl4Xs72o4mnUNRtV2J13zcO/3DXrmg9tuGFPinkWZUJe3qT7w87+K8/3nNe7Txx28e2ZfXuw/awcYcDmllQDE4/lIBAz/wDbJdXtXtllIQyXONrA4j0j4R9yvDewFLuqb6zrGoYb/sbr4u+S6FfjWMLiLFxkmSZJ5/RcqxjKacsnR42mx9Rr8IL2zDiJc2QbB2eSPAbSJtPT99Fl4XFAc4RjBgagXz5mMk93EkGY+xy2yXDWmcprpz3Qa5mHSTplfOPVI71+YEfMTr6JxrkyDkI0ueXzSzUebxeYtyC4ziXBQ4gmbaETE66J3DPnS1rfZSBiHxZkgb5WM6ZfNEHASMRz+U5eibSMmkVAATte42nLnl5qjWmbffJZW1IgE+f3zTccExl93TatmvdFg6NZ3iRH0QU5BcM7CDzmc+uazOqZy2Y31vpHVE6pMzE9TqLfVKGqrWNp2mLZ6R96LO+trhnbyQ9+6L4YHnpOnjCGm43sBuN5uckoKcXHWPP6KJ2Ibeqich/4rUAXJPjP63TDUHTY5N5+Gq2u7HIJkEhlzFzJth62CzO4V0gTJd+UaCTHhZWcMlZ6ptYGxGIDWSdfIImVLnPcc8wCN7rS3g3uOHC6GnDy2xTso+k4ObLZuQ0xln9+Cztn2URTq5nf/qDkBPOU/vR+VuZ+7oKXD4jZoIMzOgFyfTNM4fgXj3Q0zkPMX5bpsmlLpkua65jI6Xvc+iayoQwACTr53Hkmmk4C7SDMEAep5foqa1xElsiLbWt4pQXUdhEk5EkTkMxE+P3CF1QNZa1xe0nwRmk4AkjQEjrlPkPNJJmzhAHkDGm5UUL+IAIgWFxYyZmCB0+SJ9YQDBbp4kS2xzCF4JOL/LIdNb8oVVm3Ow2E5pSJTqOIjObAjK5n6Z8lX4j4gRJvAjUxMeaCnQO/uzl6oxw5BkEi/vZZ6CFQ0YehvqPMc0qr8JAGRnfy9UD+Hd1E2BBB0zUZiBuDGV7a/ooWCs0OBaNp2mPloZ3WWnw9bFiL3EXaD+aLT72uWt1tvhIEzYGNpKY1xbLS7eD4fqrEzDUZURxLqjW//mwYSBjJhzjGRJOfQQM1x6jXkx3TW7kNblBMi3KF2GsdMf4zPhf1RCXWB0BIyyylbx1JgnOXAHZ9TD7xi5s2/O/gpQ7IqNc104nA2cbhuhsLA3zzXdLCHWudDkDbRQh1p2Bz+for5cmZm3IrCthBJEA2ibT8806jTqYQT8ME7+nguiWmHA3k28rxshLcPjpnA1sE8kyzUM7TUMHpPlB+qYA+/pPIa87LVSZizFgPEkix6ZpdQN0a6c89D8Snkk2wQ3EYvEiOR385CYaOzgTadOsD08Ex41mIHjdB3bdd8+d/3WfJJtgt7sVxE6bAR92QueXX8CLi2XnlknOAAjawBGh+alEA4SGa20G2R+7LW/hNkF4AQc8zI6ZoBw/vBpMGZBnLSOa13DnZReR5XH3og4uS73QBP6Zwnk/E2FVKTTmYny2/VHTpDrO5+ShomRN5vynn4K+7lud5tvrZXf8AhsX+EGjj8lFbWxaYUV8n4bP10eG7VcMQdcusAMm/rutX95JcRH2MhP0VqJ5coj7bof8AfDiJgARAGV5Sa3axJEhtptpBsPFRRZnVyn21S6faME4WggyCdhy8fknU+2mtABEEW6+PkookauUe0kI7fmfcEZE5m5vb6ptbj6VnOyjLQTy1VqLUa2X0i6PaNMzi131M3QUu6xAQ2MU9CQrUVjUmZi1P4ji6MBhAgTG98zySDwlIm75ECBe3joP1UUW8Mt8XMJLTS4CgbNJibg5nDrbmj4vs+nhz+IiB0VKLpjGM43QlTstmKS/DmcPl5pVXsthcSHEDPDzJsegCiiuWnh0FVezW+8MQEuO9wII9VlZ2W4MEEFwdJ5DkrUU8WE+iwjsioThdEEk+eXhKul2W/LDJyN9Z31zUUU8GK2Cp2O+TDDoP+WcJFXs5wLhhMjIbzYGeqiimXx8UtD2c6WgmCRtlsPFLdwhEy2GtIk31MKKLjOnDSO4IwCJMCY0ibeiy1aJbeABc3JzGatRZywiKQgY5uPdm0auKaxwDoIMA3tz0VqLFIji0kDeInceqXidGVpz8ZUUVlS+6c4E26bLQ98QNbXy0UURCqjzfOxy5EYUl9M2MYddsv4UUVgE0E3lt95nxUUUVTc//2Q==" alt="プロフィール画像">
-                        <p>大学のサッカーサークルに入っています。</p>
-                    </div>
-                    <div class="image2">
-                        <img src="S__384901142.jpg" alt="プロフィール画像">
-                        <p>海外のHIPHOPが好きです。ライブによく行っています</p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="profile-skills" id="skills">
+                <p>山形出身。千葉大学工学部電気電子コース2年。8月にWeb制作を始めました。趣味はサッカーと音楽鑑賞です。</p>
+            </section>
+            <section class="profile-image">
+                    <figure class="card image1">
+                        <img src="pics/S__385605634 1.png" alt="サッカー">
+                        <figcaption>大学のサッカーサークルに入っています。</figcaption>
+                    </figure>
+                    <figure class="card image2">
+                        <img src="pics/S__384901142 1.png" alt="ライブ">
+                        <figcaption>海外のHIPHOPが好きです。ライブによく行っています。</figcaption>
+                    </figure>
+             </section>
+            <section class="profile-skills" id="skills">
                 <h2>スキル</h2>
                 <ul>
                     <li>HTML/CSS</li>
-                    <li>JavaScript</li>
-                    <li>どちらも学習中。</li>
+                    <li>JavaScript（学習中）</li>
                 </ul>
-            </div>
-            <div class="profile-contact" id="contact">
-                <h2>連絡</h2>
-                <p>Email:kosei.k02@au.com</p>
-                <p>k.kosei.5884@gmail.com</p>
-                <p>どちらでも対応できます。</p>
+            </section>
+            <section class="profile-contact" id="contact">
+                <h2>連絡先</h2>
+                <address>Email:kosei.k02@au.com</address>
+                <address>k.kosei.5884@gmail.com</address>
+                <p>どちらでもお気軽にご連絡ください。</p>
 
-            </div>
+            </section>
         </main>
         <footer>
             <p>&copy; 2025 プロフィールページ</p>
+     </footer>
+     </div>       
     </body>
 </html>
