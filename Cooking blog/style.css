@@ -16,3 +16,9 @@ nav ul li a{
     text-decoration: none;
     font-family: sans-serif;
 }
+article a img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
