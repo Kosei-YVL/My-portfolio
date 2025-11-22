@@ -17,17 +17,17 @@
 @media(max-width: 767px){
   
     
-    .header-list-right ul{
+    .header-list-right , .header-list-left {
         display: none;
     }
-    .main-visual {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .main-visual a img {
-        width: 75%;
-        height: auto;
+    .hamburger{
         display: block;
-        margin: 0 auto;
     }
+    .main-visual.slider{
+        margin-top: 56px;
+    }
+    .news.slider.slide{
+        font-size: 13px;
+    }
+
 }
